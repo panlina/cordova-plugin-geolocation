@@ -5,7 +5,7 @@
 	</js-module>
 	<platform name="android">
 		<config-file target="config.xml" parent="/*">
-			<feature name="Geolocation">
+			<feature name="GeolocationNative">
 				<param name="android-package" value="me.jacklu.cordova.plugin.Geolocation"/>
 			</feature>
 		</config-file>
