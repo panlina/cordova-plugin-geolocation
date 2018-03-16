@@ -16,4 +16,14 @@
 		</config-file>
 		<source-file src="src/android/Geolocation.java" target-dir="src/me/jacklu/cordova/plugin" />
 	</platform>
+	<platform name="browser">
+		<config-file target="config.xml" parent="/*">
+			<feature name="GeolocationNative">
+				<param name="browser-package" value="GeolocationNative" />
+			</feature>
+		</config-file>
+		<js-module src="src/browser/GeolocationNativeProxy.js" name="GeolocationNativeProxy">
+			<runs />
+		</js-module>
+	</platform>
 </plugin>
